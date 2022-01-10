@@ -20,32 +20,43 @@ function App() {
         <form action="">
           <div>
             <div className="form-group_">
-              <label htmlFor="nombre">Nombre y apellidos</label>
-              <input type="text" name="name"></input>
+              <label>
+                Nombre y apellidos
+                <input type="text" required></input>
+              </label>
             </div>
             <div class="form-group_">
-              <label for="">Email</label>
-              <input type="email" name="email"></input>
+              <label>
+                Email
+                <input type="email" name="email" required></input>
+              </label>
             </div>
             <div class="form-group_">
-              <label for="">Empresa / Organismo</label>
-              <input type="text" name="empresa"></input>
+              <label>
+                Empresa / Organismo
+                <input type="text" name="empresa" required></input>
+              </label>
             </div>
             <div class="form-group_">
-              <label for="">Pais</label>
-              <input type="text" name="pais"></input>
+              <label>
+                Pais
+                <input type="text" name="pais" required></input>
+              </label>
             </div>
           </div>
           <div>
             <div class="form-group_">
-              <label for="">Teléfono</label>
-              <input
-                type="tel"
-                name="telefono"
-                min="0"
-                max={10}
-                pattern="[0-9]+"
-              ></input>
+              <label for="">
+                Teléfono
+                <input
+                  type="tel"
+                  name="telefono"
+                  min="0"
+                  max="10"
+                  pattern="[0-9]*"
+                  required
+                ></input>
+              </label>
             </div>
             <div class="form-group-mensaje">
               <label className="label_mensaje">Mensaje:</label>
@@ -57,7 +68,7 @@ function App() {
             </div>
           </div>
           <div className="boton">
-            <button type="submit" className=" btn-primary">
+            <button type="submit" className="btn btn-primary">
               Enviar
             </button>
           </div>
