@@ -1,0 +1,6 @@
+.encabezado {
+  background-image: url("../img/fondo_nav.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1rem;
+}
