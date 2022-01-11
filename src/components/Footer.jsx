@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/vass.scss";
+import "../scss/app.scss";
 
 const Footer = () => {
   let copy = (/\u00A9/g, "©");

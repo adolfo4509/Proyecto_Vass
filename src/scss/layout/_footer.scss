@@ -1,0 +1,45 @@
+@use '/src/scss/base/variables' as v;
+@use '/src/scss/base/mixins' as m;
+
+.container_footer{
+    background-color: v.$container;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    
+ }
+ .copyright{
+     padding-top: 2rem;
+     font-size: 18px;
+     padding-bottom: 25px;
+ }
+.politicas{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    
+}
+span{
+    font-size: 18px;
+    color: v.$color-secondary;
+    opacity: .7;
+}
+ .social_redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+    margin-right: 55px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+ }
+ .fa-twitter,.fa-linkedin-in,.fa-instagram,.fa-youtube{
+     cursor: pointer;
+     color: #eeeeee;
+ }

@@ -3,7 +3,7 @@ import Cuerpo from "./components/Cuerpo";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 
-import "./scss/vass.scss";
+import "./scss/app.scss";
 
 function App() {
   return (

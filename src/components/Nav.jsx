@@ -1,11 +1,11 @@
 import React from "react";
 import Logo from "../img/Logo.png";
-import "../scss/vass.scss";
+import "../scss/app.scss";
 import "../css/styles.css";
 const Nav = () => {
   return (
-    <header class="encabezado">
-      <div class="container">
+    <header className="encabezado">
+      <div class="container_">
         <a href="https://vasscompany.com/" target="_blank" rel="noreferrer">
           {" "}
           <img className="logo" src={Logo} alt="imag not found" />
@@ -16,8 +16,8 @@ const Nav = () => {
           <i class="fas fa-bars"></i>
         </div>
       </div>
-      <div className="row">
-        <h1>CONTACTO</h1>
+      <div className="row_">
+        <h1 className="row_">CONTACTO</h1>
       </div>
     </header>
   );

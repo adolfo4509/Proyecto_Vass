@@ -1,0 +1,40 @@
+@use '/src/scss/base/variables' as v;
+@use '/src/scss/base/mixins' as m;
+
+.container_{
+    @include m.telefono {
+        .iconos{
+            font-size: 50px;
+            margin-right: 50px;
+        }
+    }
+        
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: v.$container;
+    color: white;
+    padding: 10px;
+    img{
+   
+        width: 100px;
+    }
+    
+    .iconos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        font-size: 30px;
+        margin-right: 3px;
+        
+    }
+    
+}
+h1{
+    font-size: 60px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: v.$color-secondary;
+}

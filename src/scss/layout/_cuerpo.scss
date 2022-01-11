@@ -1,0 +1,91 @@
+@use '/src/scss/base/variables' as v;
+@use '/src/scss/base/mixins' as m;
+
+.container_cuerpo{
+    
+    background-color:v.$color-tertiary;
+    color: white;
+    padding: 10px;
+    
+}
+@include m.tablet{
+    .container_cuerpo{
+        display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         background-color:v.$color-tertiary;
+         color: white;
+         padding: 10px;
+         
+     }
+}
+.titulo_cuerpo{
+    display: flex;
+    text-align: end;
+}
+.titulo_cuerpo h3{
+    font-size: 35px;
+    margin: 20px;
+}
+.container_cuerpo a{
+    color: white;
+    text-decoration: none;
+}
+.container_cuerpo_links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+   opacity: .8;
+}
+@include m.tablet{
+    .container_cuerpo_links{
+        display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         align-items: center;
+         gap: 10px;
+         font-size: 20px;
+        
+     }
+    
+}
+.container_cuerpo_links a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sistem_Vass_{
+    display: flex;
+    flex-direction: column;
+}
+@include m.tablet{
+    .sistem_Vass_{
+        display: flex;
+         flex-direction: column;
+        
+         margin-top: -7rem;
+     }
+}
+.sistem_Vass h4{
+    
+    font-size: 20px;
+    }
+.sistem_Vass a{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+ }
+ .sistem_Vass_Talent{
+     margin-top: -5rem;
+    
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+ }
+ .sistem_Vass_Talent h3{
+    font-size: 22px;
+    }
+ .sistem_Vass_Talent a{
+     font-size: 15px;
+ }
