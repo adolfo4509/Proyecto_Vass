@@ -32,9 +32,17 @@
     
 }
 h1{
-    font-size: 60px;
+    @include m.telefono{
+        font-size: 60px;
+    }
+    font-size: 30px;
     padding-top: 90px;
     padding-bottom: 40px;
     text-align: center;
     color: v.$color-secondary;
+}
+.encabezado{
+   
+    background-image: url("../../img/fondo_nav.jpg");
+    background-size: cover;
 }

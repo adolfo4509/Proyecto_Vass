@@ -7,7 +7,7 @@ import "./scss/app.scss";
 
 function App() {
   return (
-    <div className="contenedor">
+    <div className="contenedor_">
       <Nav />
       <section className="cuerpo">
         <h2>Empecemos a hacerlo sencillo</h2>
@@ -25,19 +25,19 @@ function App() {
                 <input type="text" required></input>
               </label>
             </div>
-            <div class="form-group_">
+            <div className="form-group_">
               <label>
                 Email
                 <input type="email" name="email" required></input>
               </label>
             </div>
-            <div class="form-group_">
+            <div className="form-group_">
               <label>
                 Empresa / Organismo
                 <input type="text" name="empresa" required></input>
               </label>
             </div>
-            <div class="form-group_">
+            <div className="form-group_">
               <label>
                 Pais
                 <input type="text" name="pais" required></input>
@@ -45,8 +45,8 @@ function App() {
             </div>
           </div>
           <div>
-            <div class="form-group_">
-              <label for="">
+            <div className="form-group_">
+              <label>
                 Teléfono
                 <input
                   type="tel"
@@ -58,7 +58,7 @@ function App() {
                 ></input>
               </label>
             </div>
-            <div class="form-group-mensaje">
+            <div className="form-group-mensaje">
               <label className="label_mensaje">Mensaje:</label>
               <textarea
                 className="form-control"
